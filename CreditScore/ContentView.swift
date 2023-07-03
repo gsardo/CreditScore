@@ -8,19 +8,35 @@
 import SwiftUI
 
 struct ContentView: View {
+    @ObservedObject var viewModel: ViewModel
+    
+    init(viewModel: ViewModel) {
+        self.viewModel = viewModel
+    }
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        VStack(spacing: 20) {
+            Circle()
+                .foregroundColor(.gray)
+                .frame(width: 120, height: 120)
+            
+            Text(String(viewModel.creditReport?.creditReportInfo.creditScore ?? 1000))
+                .bold()
+                .font(.title3)
+            
+            Text(viewModel.creditReport?.creditReportInfo.scoreDescription ?? "Placeholder descriptions")
+                .padding()
+            
+            Text(String(viewModel.creditReport?.creditReportInfo.nextReport ?? 31))
+                .padding()
+            
+            Text(viewModel.creditReport?.creditReportInfo.referenceNumber ?? "Placeholder reference")
+                .padding()
         }
         .padding()
-    }
-}
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
+        .task {
+            //This is called on appear of the view
+            viewModel.getCreditScoreInfo()
+        }
     }
 }

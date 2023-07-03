@@ -7,13 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1AB6582F2A526F3F002B2FBF /* CreditScoreApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB6582E2A526F3F002B2FBF /* CreditScoreApp.swift */; };
 		1AB658312A526F3F002B2FBF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB658302A526F3F002B2FBF /* ContentView.swift */; };
 		1AB658332A526F41002B2FBF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AB658322A526F41002B2FBF /* Assets.xcassets */; };
 		1AB658362A526F41002B2FBF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AB658352A526F41002B2FBF /* Preview Assets.xcassets */; };
 		1AB658402A526F41002B2FBF /* CreditScoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB6583F2A526F41002B2FBF /* CreditScoreTests.swift */; };
 		1AB6584A2A526F41002B2FBF /* CreditScoreUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB658492A526F41002B2FBF /* CreditScoreUITests.swift */; };
 		1AB6584C2A526F41002B2FBF /* CreditScoreUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB6584B2A526F41002B2FBF /* CreditScoreUITestsLaunchTests.swift */; };
+		1AB6586E2A52D40F002B2FBF /* CreditScoreApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB6586D2A52D40F002B2FBF /* CreditScoreApp.swift */; };
+		1AB658702A52D4BB002B2FBF /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB6586F2A52D4BB002B2FBF /* ViewModel.swift */; };
+		1AB658722A52D601002B2FBF /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB658712A52D601002B2FBF /* Repository.swift */; };
+		1AB658742A52D762002B2FBF /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB658732A52D762002B2FBF /* Model.swift */; };
+		1AB658762A52D879002B2FBF /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB658752A52D879002B2FBF /* Error.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +39,6 @@
 
 /* Begin PBXFileReference section */
 		1AB6582B2A526F3F002B2FBF /* CreditScore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CreditScore.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		1AB6582E2A526F3F002B2FBF /* CreditScoreApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditScoreApp.swift; sourceTree = "<group>"; };
 		1AB658302A526F3F002B2FBF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1AB658322A526F41002B2FBF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1AB658352A526F41002B2FBF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -44,6 +47,11 @@
 		1AB658452A526F41002B2FBF /* CreditScoreUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CreditScoreUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AB658492A526F41002B2FBF /* CreditScoreUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditScoreUITests.swift; sourceTree = "<group>"; };
 		1AB6584B2A526F41002B2FBF /* CreditScoreUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditScoreUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1AB6586D2A52D40F002B2FBF /* CreditScoreApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditScoreApp.swift; sourceTree = "<group>"; };
+		1AB6586F2A52D4BB002B2FBF /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		1AB658712A52D601002B2FBF /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		1AB658732A52D762002B2FBF /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		1AB658752A52D879002B2FBF /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,10 +102,14 @@
 		1AB6582D2A526F3F002B2FBF /* CreditScore */ = {
 			isa = PBXGroup;
 			children = (
-				1AB6582E2A526F3F002B2FBF /* CreditScoreApp.swift */,
 				1AB658302A526F3F002B2FBF /* ContentView.swift */,
 				1AB658322A526F41002B2FBF /* Assets.xcassets */,
 				1AB658342A526F41002B2FBF /* Preview Content */,
+				1AB6586D2A52D40F002B2FBF /* CreditScoreApp.swift */,
+				1AB6586F2A52D4BB002B2FBF /* ViewModel.swift */,
+				1AB658712A52D601002B2FBF /* Repository.swift */,
+				1AB658732A52D762002B2FBF /* Model.swift */,
+				1AB658752A52D879002B2FBF /* Error.swift */,
 			);
 			path = CreditScore;
 			sourceTree = "<group>";
@@ -257,8 +269,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1AB658742A52D762002B2FBF /* Model.swift in Sources */,
 				1AB658312A526F3F002B2FBF /* ContentView.swift in Sources */,
-				1AB6582F2A526F3F002B2FBF /* CreditScoreApp.swift in Sources */,
+				1AB658702A52D4BB002B2FBF /* ViewModel.swift in Sources */,
+				1AB6586E2A52D40F002B2FBF /* CreditScoreApp.swift in Sources */,
+				1AB658762A52D879002B2FBF /* Error.swift in Sources */,
+				1AB658722A52D601002B2FBF /* Repository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
